@@ -16,7 +16,7 @@ class CreateClientsInfosTable extends Migration
         Schema::create('clients_infos', function (Blueprint $table) {
             $table->id();
             $table->string('email');
-            $table->enum('notifyOption', ['active', 'nonactive']);
+            $table->enum('notifyOption', ['1', '0']);
             $table->timestamps();
         });
     }
